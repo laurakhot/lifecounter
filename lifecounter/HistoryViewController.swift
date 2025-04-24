@@ -23,6 +23,7 @@ class HistoryViewController: UIViewController {
     
     
     @IBAction func backPressed(_ sender: Any) {
+        self.dismiss(animated: true)
         performSegue(withIdentifier: "toHome", sender: self)
     }
 
